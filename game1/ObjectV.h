@@ -5,7 +5,7 @@ class  ObjectV
 {
 public:
 	virtual void Show();
-	private:
+	protected:
 	GLuint VAO;
 	GLuint VBO;
 	float * points;

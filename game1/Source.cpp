@@ -3,8 +3,9 @@
 #define GLEW_STATIC
 #include <GL/glew.h>
 #include <GLFW\glfw3.h>
-
 #include<iostream>
+#include "Shader.h"
+#include <string>
 using namespace std;
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode)
 {
@@ -16,6 +17,10 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 }
 int main() 
 {
+	
+	
+	
+	
 	//Инициализация GLFW
 	glfwInit();
 	//Настройка GLFW
@@ -28,29 +33,37 @@ int main()
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 	//Выключение возможности изменения размера окна
 	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
-
 	GLFWwindow* window = glfwCreateWindow(800, 600, "LearnOpenGL", nullptr, nullptr);
+	
+	glewExperimental = GL_TRUE;
+	glfwMakeContextCurrent(window);
+	int width, height;
+	glfwGetFramebufferSize(window, &width, &height);
+	glViewport(0, 0, width, height);
+	glfwSetKeyCallback(window, key_callback);//для чтения с клавиатуры
+	glewInit();
+	Shader ourShader("map.ver", "map.fg");
+
 	if (window == nullptr)
 	{
 		std::cout << "Failed to create GLFW window" << std::endl;
 		glfwTerminate();
 		return -1;
 	}
-	glfwMakeContextCurrent(window);
+	
 
-	glewExperimental = GL_TRUE;
+
 	if (glewInit() != GLEW_OK)
 	{
 		std::cout << "Failed to initialize GLEW" << std::endl;
 		return -1;
 	}
 
-	int width, height;
-	glfwGetFramebufferSize(window, &width, &height);
-    glViewport(0, 0, width, height);
+	
+	
 
-	glfwSetKeyCallback(window, key_callback);//для чтения с клавиатуры
-
+	
+	
 	while (!glfwWindowShouldClose(window))
 	{
 		glfwPollEvents();

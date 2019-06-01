@@ -13,6 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Файлы ресурсов\ShaderPrograms">
+      <UniqueIdentifier>{773703a4-0f22-4592-acc9-b80ef1fa64aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Model">
+      <UniqueIdentifier>{075f0677-62d3-40ca-a11f-180b01bce32c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Model">
+      <UniqueIdentifier>{7e7038d2-ec97-4a07-8a97-bfe019b13465}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -24,6 +33,9 @@
     <ClCompile Include="Shader.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Map.h">
+      <Filter>Файлы заголовков\Model</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ObjectV.h">
@@ -32,5 +44,13 @@
     <ClInclude Include="Shader.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="map.fg">
+      <Filter>Файлы ресурсов\ShaderPrograms</Filter>
+    </None>
+    <None Include="map.ver">
+      <Filter>Файлы ресурсов\ShaderPrograms</Filter>
+    </None>
   </ItemGroup>
 </Project>

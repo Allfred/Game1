@@ -4,15 +4,15 @@
 #include <fstream>
 #include <sstream>
 #include <iostream>
-
 #include <GL/glew.h>; // Подключаем glew для того, чтобы получить все необходимые заголовочные файлы OpenGL
 
 using namespace  std;
 class Shader
 {
+public:
 	GLuint Program{};
 	// Конструктор считывает и собирает шейдер
-	Shader(const GLchar* vertexPath, const GLchar* fragmentPath, const GLchar* geometryPath);
+	Shader(const GLchar* vertexPath, const GLchar* fragmentPath);
 	// Использование программы
 	void Use();
 private:

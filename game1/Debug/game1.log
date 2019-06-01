@@ -1,8 +1,5 @@
-﻿  ObjectV.cpp
-  Shader.cpp
-c:\users\antibakter\source\repos\game1\game1\shader.h(8): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-  Source.cpp
-  Создание кода...
+﻿  Source.cpp
+c:\users\antibakter\source\repos\game1\game1\shader.h(7): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
 LINK : warning LNK4098: библиотека по умолчанию "LIBCMT" противоречит использованию других библиотек; используйте параметр /NODEFAULTLIB:library
 Shader.obj : warning LNK4049: импортирован локально определенный символ ___glewAttachShader
 Shader.obj : warning LNK4049: импортирован локально определенный символ ___glewCompileShader
@@ -17,4 +14,4 @@ Shader.obj : warning LNK4049: импортирован локально опре
 Shader.obj : warning LNK4049: импортирован локально определенный символ ___glewShaderSource
 Shader.obj : warning LNK4049: импортирован локально определенный символ ___glewUseProgram
 glew32s.lib(glew.obj) : warning LNK4099: "vc120.pdb" PDB не найден с "glew32s.lib(glew.obj)" или на "C:\Users\Antibakter\source\repos\game1\Debug\vc120.pdb"; компоновка объекта выполняется как при отсутствии отладочных данных
-  game1.vcxproj -> C:\Users\Antibakter\source\repos\game1\Debug\game1.exe
+  game1.vcxproj -> C:\Users\Antibakter\source\repos\game1\Debug\Game1.exe
